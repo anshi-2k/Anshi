@@ -1,1 +1,1 @@
-version from branch1
+Resolved: Change from branch1 and branch2
