@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Explorers - Fun Kids Learning</title>
+    <style>
+        body {
+            background-color: #FFF8DC;
+            color: #2F4F4F;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            margin: 20px;
+        }
+        table, th, td {
+            border: 2px solid #FF69B4;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #FFB6C1;
+        }
+        div {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+        }
+        /* Styling form controls to match the kids theme */
+        form label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        input[type="tel"],
+        select,
+        textarea {
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 2px solid #FFB6C1;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 14px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: inherit;
+            margin-right: 10px;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #FF1493;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to Little Explorers! 🌟</h1>
+        <p>Your fun journey into learning math, reading, and science starts here!</p>
+        <nav>
+            <a href="#subjects">Explore Subjects</a> | 
+            <a href="#schedule">Daily Schedule</a> | 
+            <a href="#register">Kid Registration</a> | 
+            <a href="#resources">External Fun</a> | 
+            <a href="#contact">Contact Us</a> 
+        </nav>
+    </div>
+
+    <div id="subjects">
+        <h2>What We Learn 📚</h2>
+        <p>Choose a category to start exploring interactive lessons and games!</p>
+        
+        <h3>Learning Paths (Ordered Steps)</h3>
+        <ol>
+            <li>Basic Foundations
+                <ol type="a">
+                    <li>Alphabet & Phonics</li>
+                    <li>Numbers 1 to 20</li>
+                </ol>
+            </li>
+            <li>Intermediate Fun
+                <ol type="a">
+                    <li>Simple Addition & Subtraction</li>
+                    <li>Short Story Reading</li>
+                </ol>
+            </li>
+        </ol>
+
+        <h3>Fun Activities (Unordered Options)</h3>
+        <ul>
+            <li>Creative Arts
+                <ul>
+                    <li>Coloring Worksheets</li>
+                    <li>Finger Painting Ideas</li>
+                </ul>
+            </li>
+            <li>Science Experiments
+                <ul>
+                    <li>Volcano Eruption</li>
+                    <li>Planting Seeds</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Kids Dictionary</h3>
+        <dl>
+            <dt><b>Phonics</b></dt>
+            <dd>A method of teaching people to read by correlating sounds with letters.</dd>
+            <dt><b>STEM</b></dt>
+            <dd>Learning about Science, Technology, Engineering, and Math in fun ways!</dd>
+        </dl>
+    </div>
+
+    <div id="schedule">
+        <h2>Daily Activity Schedule ⏰</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Category</th>
+            </tr>
+            <tr>
+                <td>09:00 AM</td>
+                <td>Morning Storytime</td>
+                <td>Reading</td>
+            </tr>
+            <tr>
+                <td>10:30 AM</td>
+                <td>Math Puzzles</td>
+                <td>Numbers</td>
+            </tr>
+            <tr>
+                <td>02:00 PM</td>
+                <td>Arts & Crafts</td>
+                <td>Creativity</td>
+            </tr>
+        </table>
+
+        <h3>Featured Learning Buddy</h3>
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%25FFB6C1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='50'>🧸</text></svg>" 
+             alt="Learning Buddy Mascot" 
+             width="200">
+        
+        <p>Click on the badge below to visit our interactive games portal:</p>
+        <a href="https://pbskids.org" target="_blank">
+            <img src="https://placehold.co/180x60/FF69B4/FFFFFF?text=Play+Games!" 
+                 alt="Play External Games Link">
+        </a>
+    </div>
+
+    <!-- Kids & Parent Registration Form Section -->
+    <div id="register">
+        <h2>Little Explorer Join Form 📝</h2>
+        <form>
+            <!-- Parent Details -->
+            <label for="parent_name">Parent / Guardian Name</label><br>
+            <input type="text" id="parent_name" name="parent_name" placeholder="Enter parent's name" pattern="[A-Za-z\s]+" title="Only letters and spaces allowed" required><br>
+
+            <label for="email">Parent's Email</label><br>
+            <input type="email" id="email" name="email" placeholder="parent@example.com" required><br>
+
+            <label for="password">Account Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Create a secure password" required><br>
+
+            <hr style="border: 1px dashed #FFB6C1; margin: 20px 0;">
+
+            <!-- Child Details -->
+            <label for="child_name">Child's Name</label><br>
+            <input type="text" id="child_name" name="child_name" placeholder="Enter kid's name" required><br>
+
+            <label for="age">Child's Age (Years)</label><br>
+            <input type="number" id="age" name="age" min="3" max="12" placeholder="3 to 12" required><br>
+
+            <label for="dob">Child's Date of Birth</label><br>
+            <input type="date" id="dob" name="dob"><br>
+
+            <label>Gender</label><br>
+            <input type="radio" id="boy" name="gender" value="Boy"> 
+            <label for="boy" style="font-weight:normal;">Boy</label>
+            <input type="radio" id="girl" name="gender" value="Girl"> 
+            <label for="girl" style="font-weight:normal;">Girl</label>
+            <br><br>
+
+            <label>Favorite Subjects</label><br>
+            <input type="checkbox" id="math" name="subjects" value="Math"> 
+            <label for="math" style="font-weight:normal;">Math Puzzles</label>
+            <input type="checkbox" id="reading" name="subjects" value="Reading"> 
+            <label for="reading" style="font-weight:normal;">Story Reading</label>
+            <input type="checkbox" id="science" name="subjects" value="Science"> 
+            <label for="science" style="font-weight:normal;">Science Experiments</label>
+            <br><br>
+
+            <label for="grade">Current Grade Level</label><br>
+            <select id="grade" name="grade">
+                <option value="preschool">Preschool</option>
+                <option value="kindergarten">Kindergarten</option>
+                <option value="grade1">1st Grade</option>
+                <option value="grade2">2nd Grade</option>
+            </select>
+            <br>
+
+            <label for="notes">Special Learning Needs or Notes from Parent</label><br>
+            <textarea id="notes" name="notes" rows="4" cols="35" placeholder="Let us know if your child has specific learning goals or interests..."></textarea>
+            <br>
+
+            <label for="badge_color">Choose Kid's Profile Theme Color</label><br>
+            <input type="color" id="badge_color" name="badge_color" value="#FF69B4">
+            <br><br>
+
+            <label for="photo">Upload Child's Profile Picture</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <br><br>
+
+            <label for="goal">Weekly Learning Target (Hours per week)</label><br>
+            <input type="range" id="goal" name="goal" min="1" max="10" value="5">
+            <br><br>
+
+            <input type="submit" value="Register Explorer!">
+            <input type="reset" value="Reset Form">
+        </form>
+    </div>
+
+    <div id="resources">
+        <h2 id="contact">Connect & Explore More 🚀</h2>
+        <p>Check out our partner learning site: 
+            <a href="https://www.nationalgeographic.com/kids/" target="_blank">National Geographic Kids</a>
+        </p>
+
+        <h3>Contact Teacher / Support</h3>
+        <p>Have questions? Reach out directly:</p>
+        <p>Email: 
+            <a href="mailto:support@littleexplorers.com">support@littleexplorers.com</a>
+        </p>
+        <p>Phone: 
+            <a href="tel:+18005555327">1-800-555-KIDS</a>
+        </p>
+        <p><a href="#">Back to Top ⬆</a></p>
+    </div>
+</body>
+</html>
